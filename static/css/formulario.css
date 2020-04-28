@@ -1,0 +1,46 @@
+body{
+  background: #fff;
+  color: blue;
+  font-size: 15px;
+}
+#formulario{
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  border: 2px solid;
+  border-radius: 30px;
+  border-color: blue;
+  padding: 10px;
+}
+.cajas{
+  width: 90%;
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  background: transparent;
+  border-bottom: 2px solid red;
+  color: black;
+}
+.cajas:focus{
+    border-top: 2px solid orange;
+}
+#boton{
+  width: 600px;
+  background: blue;
+  color: white;
+  border-radius: 30px;
+}
+.botones{
+    width: 30%;
+    background: transparent;
+    color: blue;
+    border: 2px solid;
+    border-color: blue;
+    border-radius: 10px;
+}
+
+.botones:hover{
+  background:red;
+  color: white;
+  cursor:pointer;
+}
