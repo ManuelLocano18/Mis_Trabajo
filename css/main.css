@@ -1,0 +1,197 @@
+body {
+  background: #080000;
+  color: #333333;
+  margin-top: 5rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(https://cdn.eso.org/images/screen/tarantula.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #FAFAFA;
+}
+
+.bg-steel {
+  background-color: #080000;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+#galeria, #galeri * {
+  box-sizing: border-box;
+}
+
+#galeria{
+  border: 1px solid #000000;
+  padding: 10px;
+  padding-bottom: 2px;
+  width: 100%
+}
+
+#galeria_miniatura{
+  display: table;
+  margin: 0 auto;
+}
+
+#imgGaleria{
+  border: 1px solid #ccc;
+  padding: 3px;
+  width: 1080px;
+  height: 600px;
+}
+
+.miniaturas{
+  width: 100px;
+  height: 100px;
+  float: left;
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+.miniaturas:hover{
+  opacity: .5;
+  filter: alpha(opacity= 80);
+}
+
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h2{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+}
+
+.colum2 h2{
+    font-size: 22px;
+}
+
+.row1{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row1 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row1 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #c7c7c7;
+}
+
+.row1 a{
+    margin-top: 10px;
+    margin-left: 0px;
+    color: #c7c7c7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h2{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 180px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #080000;
+
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.copyright{
+    color: #c7c7c7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+@media screen and (max-widht: 1100px){
+
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
+    }
+
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
