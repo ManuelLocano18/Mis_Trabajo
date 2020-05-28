@@ -23,8 +23,8 @@
               <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="inicio.php">Inicio</a>
                 <a class="nav-item nav-link" href="conoceme.php">Conoceme</a>
-                <a class="nav-item nav-link" href="#">Registrate</a>
-                <a class="nav-item nav-link" href="#">Inicia Sesión</a>
+                <a class="nav-item nav-link" href="registro.php">Registrate</a>
+                <a class="nav-item nav-link" href="login.php">Inicia Sesión</a>
               </div>
             </div>
           </div>

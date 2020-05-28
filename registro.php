@@ -1,3 +1,6 @@
+<?php
+  include 'includes/conexion.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css"><!--Aqui llame a las librerias que vamos a ocupar de estilo-->
-    <title>JMRL-Conoceme</title>
+    <title>JMRL-Registro</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/header.js"></script><!--use estos script para que mi pagina web sea responsive con
       funciones de javascript-->
@@ -39,12 +42,30 @@
       <br>
       <div class="container p-3 ">
         <div class="jumbotron text-white bg-dark mb-3">
-          <h1 class="display-4" align="center">¡Hola a todos!</h1>
-          <p class="lead" align="justify">Mi nombre es Juan Manuel Ranel Locano.</p>
+          <h1 class="display-4" align="center">¡Registrate!</h1>
+          <p class="lead" align="justify">Lllena el formulario para registrarte en el sitio.</p>
           <hr class="my-4">
-          <p align="justify">Soy actualmente un desarrollador de sitios web, estudio en el CONALEP Naucalpan 1 en la carrera de Profesional Tecnico Bachiller en Informática.</p>
+          <form action="" method="POST">
+            <div class="container-group">
+                <label for="">Nombre:</label>
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+            </div>
+            <br>
+            <div class="container-group">
+                <label for="">Ingresa un nombre de usuario:</label>
+                <input type="text" name="usuario" class="form-control" placeholder="Nombre de ususario" required>
+            </div>
+            <br>
+            <div class="container-group">
+                <label for="">Ingresa una contraseña:</label>
+                <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <br>
+            <button class="btn btn-primary" type="submit">Resgistrate</button>
+          </form>
         </div>
  </div>
+ <?php echo $mensaje; ?>
 
 <br>
 <!--Empieza la parte inferior y final de mi pagina-->
