@@ -1,3 +1,11 @@
+<?php
+session_start();
+include 'includes/conexion.php';
+$usuario = $_SESSION['usuario'];
+if (!isset($usuario)) {
+  header("location:login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,16 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css"><!--Aqui llame a las librerias que vamos a ocupar de estilo-->
-    <title>JMRL</title>
+    <title>JMRL-Inicio</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/header.js"></script><!--use estos script para que mi pagina web sea responsive con
       funciones de javascript-->
   </head>
   <body>
     <!--Aqui inicia mi barra de navegacion-->
-    <?php include 'includes/barraf.php' ?>
+    <?php include 'includes/barras.php' ?>
       <!--Aqui termina mi barra de navegacion-->
       <!--Coloque una imagen que da una introduccion de lo que habla mi blog-->
+
+        <div class="jumbotron text-white bg-dark mb-3">
+          <h1 class="display-4" align="center">¡Bienvenido: <?php echo $usuario; ?>!</h1>
+          <p class="lead" align="justify"></p>
+        </div>
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
